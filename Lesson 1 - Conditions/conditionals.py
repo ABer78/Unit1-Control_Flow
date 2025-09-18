@@ -32,7 +32,25 @@ if age_input:
     elif 64 <= age <= 20:
         print("You are an adult")
     elif age >= 65:
-        print("You are old")
+        print("You are a senior")
+    else:
+        print("Please enter a valid age")
+
+# == Complex Boolean ==
+age = 17
+gpa = 3.8
+has_license = True
+
+can_drive = age >= 16 and has_license
+honor_roll = gpa >= 3.5
+eligible = can_drive and honor_roll and age >= 17
+
+print(f"Can drive: {can_drive}")
+print(f"Honor roll: {honor_roll}")
+print(f"Eligible: {eligible}")
+
+if eligible:
+    print("Scholarship candidate")
 
 # ========================================
 # SECTION 3: STUDENT STATUS CHECKER
